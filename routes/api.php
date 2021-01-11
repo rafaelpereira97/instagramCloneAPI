@@ -23,7 +23,7 @@ Route::post('/register',[\App\Http\Controllers\ApiController::class,'register'])
 Route::get('/checkUser/{usernameInput}',[\App\Http\Controllers\ApiController::class,'checkUser']);
 
 Route::post('/insertPost',[\App\Http\Controllers\ApiController::class,'insertPost'])->middleware('auth:api');
-Route::get('/getFeed',[\App\Http\Controllers\ApiController::class,'getFeed'])->middleware('auth:api');
+Route::get('/getFeed',[\App\Http\Controllers\ApiController::class,'getFeed']);
 
 Route::post('/makeComment',[\App\Http\Controllers\ApiController::class,'makeComment'])->middleware('auth:api');
 Route::get('/profile/{username}',[\App\Http\Controllers\ApiController::class,'getMyProfileUser']);
