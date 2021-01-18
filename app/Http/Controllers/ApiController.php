@@ -159,7 +159,7 @@ class ApiController extends Controller
 
     public function getMyNotifications(Request $request){
         $user = $request->user();
-        $notifications = Notif::with('user','post.user')->where('user_id',$user->id)->get();
+        $notifications = Notif::with('user','post.user')->distinct('post_id')->get();
         Notif::where('user_id',$user->id)->update(['seen'=> 1]);
         return response()->json($notifications);
     }
