@@ -142,7 +142,8 @@ class ApiController extends Controller
 
     public function forgotPassword($email){
         $user = User::where('email',$email)->first();
-        $user->sendPasswordResetNotification();
+        $token = Str::random(60);
+        $user->sendPasswordResetNotification($token);
         return response()->json(null,200);
     }
 }
