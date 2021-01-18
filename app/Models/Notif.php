@@ -18,7 +18,7 @@ class Notif extends Model
     }
 
     public function userCriou(){
-      return $this->belongsTo(User::class);
+      return $this->belongsTo(User::class,'userCriou','user.id');
     }
 
 }
