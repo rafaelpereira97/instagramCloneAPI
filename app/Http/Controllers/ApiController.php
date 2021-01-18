@@ -129,8 +129,15 @@ class ApiController extends Controller
     }
 
     public function changeAvatar(Request $request){
+
         $user = $request->user();
-        dd($user);
+
+        $base64 = 'data:'. $request->type . ';base64,' . $request->media;
+        $user->avatar = $base64;
+        $user->save();
+
+        return response()->json(null,200);
+
     }
 
 /*    public function addLike(Request $request){
