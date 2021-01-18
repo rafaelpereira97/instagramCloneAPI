@@ -87,7 +87,7 @@ class ApiController extends Controller
 
         $users = User::all();
         foreach($users as $user){
-            $notification = new Notification();
+            $notification = new \App\Models\Notification();
             $notification->user_id = $user->id;
             $notification->post_id = $post->id;
             $notification->save();
