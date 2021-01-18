@@ -158,7 +158,7 @@ class ApiController extends Controller
 
     public function getMyNotifications(Request $request){
         $user = $request->user();
-        $notifications = $user->notifications()->with('user','post')->get();
+        $notifications = $user->notifications()->with(['user','post'])->get();
 
         return response()->json([
             'notifications' => $notifications
