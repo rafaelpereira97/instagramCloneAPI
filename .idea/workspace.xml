@@ -170,7 +170,7 @@
       <workItem from="1610393334253" duration="1479000" />
       <workItem from="1610582942209" duration="673000" />
       <workItem from="1610797206099" duration="1208000" />
-      <workItem from="1610972028203" duration="1023000" />
+      <workItem from="1610972028203" duration="3083000" />
     </task>
     <task id="LOCAL-00001" summary="Route group">
       <created>1610583254545</created>
@@ -200,7 +200,56 @@
       <option name="project" value="LOCAL" />
       <updated>1610978965217</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="API change avatar.">
+      <created>1610979340057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610979340057</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reset password.">
+      <created>1610980764707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610980764707</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Reset password.">
+      <created>1610980894540</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610980894540</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Reset password.">
+      <created>1610981036937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981036937</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Reset password.">
+      <created>1610981085359</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981085359</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Reset password token">
+      <created>1610981169798</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981169798</updated>
+    </task>
+    <task id="LOCAL-00011" summary="notifications">
+      <created>1610981735465</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981735465</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,20 +259,23 @@
     <MESSAGE value="Route group" />
     <MESSAGE value="teste" />
     <MESSAGE value="API change avatar." />
-    <option name="LAST_COMMIT_MESSAGE" value="API change avatar." />
+    <MESSAGE value="Reset password." />
+    <MESSAGE value="Reset password token" />
+    <MESSAGE value="notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="notifications" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="10" key="CommitChangelistDialog2" timestamp="1610978964873">
+    <state x="424" y="10" key="CommitChangelistDialog2" timestamp="1610981735336">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="424" y="10" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1610978964873" />
+    <state x="424" y="10" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1610981735336" />
     <state x="198" y="90" key="DiffContextDialog" timestamp="1610797552673">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="198" y="90" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1610797552673" />
-    <state x="440" y="258" key="Vcs.Push.Dialog.v2" timestamp="1610978966878">
+    <state x="440" y="258" key="Vcs.Push.Dialog.v2" timestamp="1610981736628">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="258" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1610978966878" />
+    <state x="440" y="258" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1610981736628" />
   </component>
 </project>
