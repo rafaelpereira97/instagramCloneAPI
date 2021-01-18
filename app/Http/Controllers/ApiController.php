@@ -155,4 +155,13 @@ class ApiController extends Controller
         $user->sendPasswordResetNotification($token);
         return response()->json(null,200);
     }
+
+    public function getMyNotifications(Request $request){
+        $user = $request->user();
+        $notifications = $user->notifications()->with('user','post');
+
+        return response()->json([
+            'notifications' => $notifications
+        ]);
+    }
 }

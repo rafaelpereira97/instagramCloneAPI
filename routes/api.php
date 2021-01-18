@@ -30,4 +30,5 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/makeComment',[ApiController::class,'makeComment']);
     Route::post('/insertPost',[ApiController::class,'insertPost']);
     Route::post('/changeAvatar',[ApiController::class,'changeAvatar']);
+    Route::post('/getMyNotifications',[ApiController::class,'getMyNotifications']);
 });
