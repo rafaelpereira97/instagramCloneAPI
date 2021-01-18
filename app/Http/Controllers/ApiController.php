@@ -88,11 +88,13 @@ class ApiController extends Controller
 
         $users = User::all();
         foreach($users as $user){
-            $notification = new \App\Models\Notif();
-            $notification->user_id = $user->id;
-            $notification->post_id = $post->id;
-            $notification->userCriou = $request->user()->id;
-            $notification->save();
+            if($request->user()->id != $user->id){
+                $notification = new \App\Models\Notif();
+                $notification->user_id = $user->id;
+                $notification->post_id = $post->id;
+                $notification->userCriou = $request->user()->id;
+                $notification->save();
+            }
         }
 
         return response()->json(null,200);
