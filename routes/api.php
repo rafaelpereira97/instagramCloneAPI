@@ -24,6 +24,7 @@ Route::get('/getFeed',[ApiController::class,'getFeed']);
 
 Route::get('/profile/{username}',[ApiController::class,'getMyProfileUser']);
 Route::get('/profile/{username}/Posts',[ApiController::class,'getMyProfile']);
+Route::get('/forgotPassword/{email}',[ApiController::class,'forgotPassword']);
 
 Route::middleware('auth:api')->group(function () {
     Route::post('/makeComment',[ApiController::class,'makeComment']);
