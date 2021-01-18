@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -83,6 +84,12 @@ class ApiController extends Controller
         $post->likes = 0;
         $post->user_id = $user->id;
         $post->save();
+
+        $users = User::all();
+        foreach($users as $user){
+            $notification = new Notification();
+            $notification->create(['user_id' => $user->id, 'post_id' => $post->id]);
+        }
 
         return response()->json(null,200);
     }
