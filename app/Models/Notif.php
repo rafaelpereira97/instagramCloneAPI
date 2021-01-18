@@ -16,4 +16,9 @@ class Notif extends Model
     public function post(){
         return $this->belongsTo(Post::class);
     }
+
+    public function userCriou(){
+      return $this->belongsTo(User::class);
+    }
+
 }
