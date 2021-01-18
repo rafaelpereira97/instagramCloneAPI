@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\Notif;
 use App\Models\Post;
 use App\Models\User;
 use Carbon\Carbon;
@@ -87,7 +88,7 @@ class ApiController extends Controller
 
         $users = User::all();
         foreach($users as $user){
-            $notification = new \App\Models\Notification();
+            $notification = new \App\Models\Notif();
             $notification->user_id = $user->id;
             $notification->post_id = $post->id;
             $notification->save();
@@ -158,7 +159,7 @@ class ApiController extends Controller
 
     public function getMyNotifications(Request $request){
         $user = $request->user();
-        $notifications = \App\Models\Notification::with('post')->where('user_id',$user->id)->get();
+        $notifications = Notif::with('user','post')->where('user_id',$user->id)->get();
 
         return response()->json([
             'notifications' => $notifications
