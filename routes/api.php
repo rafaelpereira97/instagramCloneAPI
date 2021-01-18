@@ -26,6 +26,7 @@ Route::get('/profile/{username}',[ApiController::class,'getMyProfileUser']);
 Route::get('/profile/{username}/Posts',[ApiController::class,'getMyProfile']);
 
 Route::middleware('auth:api')->group(function () {
-    Route::post('/makeComment',[ApiController::class,'makeComment'])->middleware('auth:api');
-    Route::post('/insertPost',[ApiController::class,'insertPost'])->middleware('auth:api');
+    Route::post('/makeComment',[ApiController::class,'makeComment']);
+    Route::post('/insertPost',[ApiController::class,'insertPost']);
+    Route::post('/changeAvatar',[ApiController::class,'changeAvatar']);
 });
